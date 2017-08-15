@@ -45,14 +45,14 @@ class Options extends Component {
                 <Row>  
                     <Col sm={2} />
                      <Col sm={3}>
-                        <FlatButton label="Rules"  onTouchTap={this.handleRulesOpen} primary={true} />
+                        <FlatButton id="buttonChange" label="Rules"  onTouchTap={this.handleRulesOpen} primary={true} />
                         <Dialog  actions={<FlatButton label="Close Rules" primary={true} onTouchTap={this.handleRulesClose} />} modal={false} open={this.state.rulesOpen} onRequestClose={this.handleRulesClose} >
                             <Rules />
                         </Dialog>
                     </Col>
                     <Col sm={2} />
                     <Col sm={3}>
-                        <FlatButton label="Checklist"  onTouchTap={this.handleDrawerToggle} primary={true} />
+                        <FlatButton id="buttonChange" label="Checklist"  onTouchTap={this.handleDrawerToggle} primary={true} />
                         <Drawer open={this.state.drawerOpen} openSecondary={true} >
                             <Checklist />
                         </Drawer>

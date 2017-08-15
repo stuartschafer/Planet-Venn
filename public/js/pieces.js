@@ -7,6 +7,10 @@ var id = 0;
 var alreadyPlaced = "";
 var currentUserEmail = "";
 
+var correct = new Audio("../images/correct.mp3");
+var wrong = new Audio("../images/wrong.mp3");
+var blackholesound = new Audio("../images/blackhole.mp3");
+
 function getUserEmail() {
     currentUserEmail = $("#userEmail").val();
 }
@@ -85,16 +89,19 @@ function startGame() {
                     if (alreadyPlaced === "false") {
                         if (rule1 === itemShape || rule1 === itemColor || rule1 === itemSize) {
                             if (rule2 === itemShape || rule2 === itemColor || rule2 === itemSize) {
+                                correct.play();
                                 alreadyPlaced = "true";
                                 $("#" + id).attr("data-placed", "true");
                                 animate();
                             } else {
+                                wrong.play();
                                 $("#" + id).removeAttr("style");
                                 $("#" + id).attr("style", "position: relative");
                             }
                         } else {
-                                $("#" + id).removeAttr("style");
-                                $("#" + id).attr("style", "position: relative");
+                            wrong.play();
+                            $("#" + id).removeAttr("style");
+                            $("#" + id).attr("style", "position: relative");
                         }
                         moves++;
                         $("#moves").html(moves);
@@ -108,13 +115,16 @@ function startGame() {
                 drop: function() {
                     if (alreadyPlaced === "false" && dontduplicate === 0) {
                         if (rule2 === itemShape || rule2 === itemColor || rule2 === itemSize) {
+                            wrong.play();
                             $("#" + id).removeAttr("style");
                             $("#" + id).attr("style", "position: relative");
                         } else if (rule1 === itemShape || rule1 === itemColor || rule1 === itemSize) {
+                            correct.play();
                             alreadyPlaced = "true";
                             $("#" + id).attr("data-placed", "true");
                             animate();
                         } else {
+                            wrong.play();
                             $("#" + id).removeAttr("style");
                             $("#" + id).attr("style", "position: relative");
                         }
@@ -129,13 +139,16 @@ function startGame() {
                 drop: function() {
                     if (alreadyPlaced === "false" && dontduplicate === 0) {
                         if (rule1 === itemShape || rule1 === itemColor || rule1 === itemSize) {
+                            wrong.play();
                             $("#" + id).removeAttr("style");
                             $("#" + id).attr("style", "position: relative");
                         } else if (rule2 === itemShape || rule2 === itemColor || rule2 === itemSize) {
+                            correct.play();
                             alreadyPlaced = "true";
                             $("#" + id).attr("data-placed", "true");
                             animate();
                         } else {
+                            wrong.play();
                             $("#" + id).removeAttr("style");
                             $("#" + id).attr("style", "position: relative");
                         }
@@ -151,11 +164,13 @@ function startGame() {
                     if (alreadyPlaced === "false" && dontduplicate === 0) {
                         if (rule1 != itemShape && rule1 != itemColor && rule1 != itemSize && rule2 != itemShape && rule2 != itemColor && rule2 != itemSize) {
                             // $("#" + id).position( { of: $(this), my: 'center', at: 'center' } );
+                            blackholesound.play();
                             alreadyPlaced = "true";
                             $("#" + id).addClass("rotate blackhole");
                             $("#" + id).attr("data-placed", "true");
                             animate();
                         } else {
+                            wrong.play();
                             $("#" + id).removeAttr("style");
                             $("#" + id).attr("style", "position: relative");
                         }
@@ -201,6 +216,7 @@ function ruleGuess() {
 
     if (rule1 === rule1guess && rule2 === rule2guess) {
         var score = $("#moves").html();
+        $(".blackhole").removeClass("rotate");
         $(".blackhole").addClass("rotateAway");
 
         // Ajax request to get the current user's info

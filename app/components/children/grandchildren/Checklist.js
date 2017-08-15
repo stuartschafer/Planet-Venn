@@ -112,7 +112,7 @@ class Checklist extends Component {
                             ))}
                         </tbody>
                     </table>
-                    <FlatButton label="Reset Table" onClick={this.unCheckAll} />
+                    <FlatButton id="buttonChange" label="Reset Table" onClick={this.unCheckAll} />
                 </div>
             </div>		
 		);

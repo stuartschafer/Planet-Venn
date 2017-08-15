@@ -1,18 +1,39 @@
-# Planet Venn
+# PLANET VENN #
 
-## Learning Game that utilizes logic and pattern recognition.
+Please visit and play our live application @ https://morning-hamlet-93020.herokuapp.com/
 
-# Title Page
-<img src="https://user-images.githubusercontent.com/22500207/28852493-831cbd3c-76f7-11e7-9b61-c73e40a3b3f3.png" width="750" alt="Title Page">
+***A logic-based educational game that is really fun to play!***
 
-# Sign In
-<img src="https://user-images.githubusercontent.com/22500207/28852497-8a73dc5a-76f7-11e7-9a90-dee8181c6705.png" width="750" alt="Sign In">
 
-# Game
-<img src="https://user-images.githubusercontent.com/22500207/28852503-912b251c-76f7-11e7-862c-c134e9f3b7b0.png" width="750" alt="Game">
+## Video Demostration ##
+![](public/images/video.gif)
 
-# Rules
-<img src="https://user-images.githubusercontent.com/22500207/28852545-edd34164-76f7-11e7-910d-a402df44e315.png" width="750" alt="Rules">
 
-# Checklist
-<img src="https://user-images.githubusercontent.com/22500207/28852520-ab4ccefa-76f7-11e7-8b2b-c73e26e819ed.png" width="750" alt="Checklist">
+## Home Screen / Landing page ##
+![](public/images/initial.png)
+On the initial page with our name and logo you can **Sign Up** *(To be able to track your progress and post a high score if you get it.)*, **Sign In** *(same as above)*, **Just Play** *(Play a game right away, but nothing will be saved)*, and **View High Scores**.
+
+
+## Game Screen ##
+![](public/images/gamescreen.png)
+In the game you will notice several components.  The **Moves** component keeps track of every move you have made.  Correct piece placements, incorrect piece placements, and guessing the rules all increase the moves by 1. If you move a piece that has already been correctly guessed, that does not increase the move counter.
+
+The ***RULES*** *(lower-left tab)* link will show you in detail how to play the game.
+
+Clicking on the ***CHECKLIST*** *(lower-left tab)* will allow you to place checkmarks according to what you think is correct and incorrect. (Optional)
+
+***Star icon*** *(top right)*: Clicking this will show your previous scores to keep track of your progress.
+
+***Box with arrow icon*** *(top right)*: Clicking this will take you back to the initial home screen.
+
+
+## Game Play ##
+The ***Pieces*** *(on the left-hand side that include aliens, suns, and satellites)*, are draggable.  Click on a piece and try to figure out where that piece should go.  If you correctly place it, the piece will animate.  If it is not correct, it will return to it's starting position.
+
+The ***Planets*** *(top 2 planets in the center that overlap)* are the what the rules are correlated to.  A correct piece placed will be animated.
+
+The ***overlapping planet section*** is where a piece meets criteria for *both* rules.
+
+The ***Blackhole*** is where pieces are placed that do not meet either rule.  *FUN NOTE: After a game is won, any piece placed in the blackhole will slowly spin and get smaller as it gets sucked away into the black hole*.
+
+***GOOD LUCK AND HAVE FUN!!!***
