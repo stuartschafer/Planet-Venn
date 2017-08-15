@@ -5,9 +5,13 @@ Please visit and play our live application @ https://morning-hamlet-93020.heroku
 ***A logic-based educational game that is really fun to play!***
 
 ##CONTENTS##
+
 [Video Demonstration](#demo)
+
 [Home Screen/Landing Page](#home)
+
 [What everything is on the Game Page](#gamescreen)
+
 [How to play/win](#gameplay)
 
 <a name="demo"></a>
