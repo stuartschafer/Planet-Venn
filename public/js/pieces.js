@@ -216,7 +216,11 @@ function ruleGuess() {
 
     if (rule1 === rule1guess && rule2 === rule2guess) {
         var score = $("#moves").html();
+<<<<<<< HEAD
         $(".blackhole").removeClass("rotate");
+=======
+	$(".blackhole").removeClass("rotate");
+>>>>>>> bc86762f937aa66f8f4c741a4528dc5485373647
         $(".blackhole").addClass("rotateAway");
 
         // Ajax request to get the current user's info
