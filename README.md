@@ -38,4 +38,4 @@ The ***Blackhole*** is where pieces are placed that do not meet either rule.  *F
 
 Once you think you know both rules, click on the dropdown boxes (just underneath the Moves component).  Then click *Make My Guess*.  If you corectly guessed the rules, then you have won the game.  If not, keep playing/guessing until you do win.  These notes will show on the lower center part of the screen.  If you won, and your scores is one of the top scores, it will be saved to the top scores and to your history (star icon on upper right of screen).  **NOTE:** These will only save if you have signed in.  If you clicked Just Play on the home screen, then your info is not saved.
 
-***GOOD LUCK AND HAVE FUN!!!***
+***GOOD LUCK AND HAVE FUN***:exclamation::exclamation::exclamation:
