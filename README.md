@@ -4,15 +4,19 @@ Please visit and play our live application @ https://morning-hamlet-93020.heroku
 
 ***A logic-based educational game that is really fun to play!***
 
+<a name="contents"></a>
+
 ## CONTENTS ##
 
-[Video Demonstration](#demo)
+- [:movie_camera: Video Demonstration](#demo)
+- [:milky_way: Home Screen/Landing Page](#home)
+- [:red_circle: What everything is on the Game Page](#gamescreen)
+- [:tada: How to play/win](#gameplay)
+- [:man::woman::man::woman: Contributors](#contributors)
 
-[Home Screen/Landing Page](#home)
+<a name="contents"></a>
 
-[What everything is on the Game Page](#gamescreen)
-
-[How to play/win](#gameplay)
+[:file_folder: Back to Contents](#contents)
 
 <a name="demo"></a>
 ## Video Demostration ##
@@ -51,3 +55,13 @@ Once you think you know both rules, click on the dropdown boxes (just underneath
 ___
 
 ***GOOD LUCK AND HAVE FUN***:exclamation::exclamation::exclamation:
+
+___
+
+<a name="contributors"></a>
+
+## Contributors ##
+- [Stuart Schafer](https://github.com/stuartschafer) :cat2:
+- [Mary Morvan](https://www.github.com/mamorvan) :koala:
+- [Michael Eggers](https://github.com/mdeggers84) :cat:
+- [Maria Wong](https://github.com/mwong770) :dog:
